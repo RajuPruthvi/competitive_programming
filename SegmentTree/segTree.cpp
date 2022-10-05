@@ -1,6 +1,5 @@
-class SegTree
-{
-public:
+class SegTree {
+    public:
 	struct node {
 		int a;
 
