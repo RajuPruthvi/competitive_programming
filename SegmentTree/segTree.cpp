@@ -1,4 +1,4 @@
-class segTree
+class SegTree
 {
 public:
 	struct node {
@@ -17,8 +17,8 @@ public:
     int n;
     vector<node> st;
 
-    segTree() {}
-    segTree(int _n) {
+    SegTree() {}
+    SegTree(int _n) {
         n = _n;
         st.resize(4*n);
     }
