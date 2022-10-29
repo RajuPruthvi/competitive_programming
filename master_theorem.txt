@@ -1,0 +1,16 @@
+Master's Theorem
+
+T(n) = a * T(n / b) + O(n^k * log^p(n)), a >= 1, b > 1, k >= 0 and p is real number.
+
+logab = loga base b
+
+if a > b^k, T(n) = O(n^logab)
+
+if a = b^k, 
+	if p < -1, T(n) = O(n^logab)
+	if p = -1, T(n) = O(n^logab * logn^2)
+	if p > -1, T(n) = O(n^logab * logn^(p+1))
+	
+if a < b^k,
+	if p < 0, T(n) = O(n^k)
+	if p >= 0, T(n) = O(n^k * logn^p)
